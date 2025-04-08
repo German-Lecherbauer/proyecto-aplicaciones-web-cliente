@@ -10,23 +10,34 @@
 <body>
         <header>    
             <h1>Titulo de la web</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
         </header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
 <div class="container">
         <aside>
             <h2>Filtros</h2>
-            <input type="text" placeholder="Buscar Productos">
+            <div class="search-filter">
+                <input type="text" placeholder="Buscar Productos">
+            </div>
+            <div>
             <label> <input type="checkbox">Ofertas</label>
             <label> <input type="checkbox">Envio Gratis</label>
+            </div>
         </aside>
     <main >
         <section class="product-grid">
+            <article id="card-1" class="product-card">
+                <img src="./img/LogoGoogle.png" alt="Nombre del Producto">
+                <h3>Nombre del Producto</h3>
+                <p>Descripción del producto</p>
+                <p>Precio: $100</p>
+                <button>Comprar</button>
+            </article>
             <article class="product-card">
                 <img src="./img/LogoGoogle.png" alt="Nombre del Producto">
                 <h3>Nombre del Producto</h3>
@@ -49,53 +60,15 @@
                 <button>Comprar</button>
             </article>
         </section>
-        <br>
-        <br>
-        <section>
-            <table>
-                <thead>
-            <tr>
-                <td>Nombre</td>
-                <td>Decripcion</td>
-                <td>Precio</td>
-                <td>Comprar</td>
-            </tr> 
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nombre del producto</td>
-                <td>Descripcion del producto</td>
-                <td>$100</td>
-                <td><button>Comprar</button></td>
-            </tr>
-            <tr>
-                <td>Nombre del producto</td>
-                <td>Descripcion del producto</td>
-                <td>$100</td>
-                <td><button>Comprar</button></td>
-            </tr>
-            <tr>
-                <td>Nombre del producto</td>
-                <td>Descripcion del producto</td>
-                <td>$100</td>
-                <td><button>Comprar</button></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="2">Total</td>
-                <td>$300</td>
-                <td></td>
-            </tr>
-        </tfoot>
-    </table>
-    </section>
     </main>
 </div>
 
     <footer>
-        <p>Todos los derechos reservados &copy</p>        
+        <p>Todos los derechos reservados &copy</p> 
+        <a href="/Proyecto-Web/contact.html">Contactenos</a>       
     </footer>
+
+    
     
 </body>
 </html>
