@@ -53,6 +53,7 @@ aside {
 
 main {
     padding: 2rem;
+    flex-grow: 1;
 }
 
 .product-grid {
@@ -85,5 +86,21 @@ footer {
     font-size: 0.8rem;
     padding: 10px;
 
+}
 
+@media (max-width: 468px)
+{
+    .container{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
 }
